@@ -1,0 +1,73 @@
+@import "reset.css";
+
+body{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+
+header{
+   display: flex;
+   align-items: center;
+   background-color: #023b6d;
+   height: 2rem;
+   padding-left: 0.6rem;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo>img{
+    height: 1.56rem;
+}
+
+.preview_devices{
+    display: flex;
+    margin-top: 0rem;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.preview_devices > ul {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.desktop{
+    padding-left: 1.7rem;
+}
+
+.mobile{
+    padding-left: 1rem;
+}
+
+.tablet{
+    padding-left: 1rem;
+}
+
+.current_template{
+    display: flex;
+    padding-left: 26.5rem;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+.chevronl{
+    width:1.5rem;
+    height: 1rem;
+    padding-right: 2rem;
+}
+
+.chevronr{
+    width:1.5rem;
+    height: 1rem;
+    padding-right: 2rem; 
+}
+
+.arsha{
+    display: flex;
+    flex-direction: row;
+    padding-right: 0.5rem;
+}
