@@ -1,0 +1,570 @@
+@import url("./reset.css");
+
+/* General*/
+html {
+  font-size: 62.5%;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Jost", sans-serif;
+}
+
+main {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.team,
+.pricing,
+.faq {
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.team__box,
+.pricing__box,
+.faq__box {
+  width: 100%;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 132rem;
+}
+
+/* Title Decoration */
+.team__title-box,
+.pricing__title-box,
+.faq__title-box {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+
+.team__title,
+.pricing__title,
+.faq__title {
+  font-size: 3.2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #37517e;
+  font-family: "Open Sans", sans-serif;
+}
+
+.title-line {
+  position: relative;
+  margin-top: 2rem;
+}
+
+.title-line__first {
+  border: none;
+  background-color: #ddd;
+  width: 12rem;
+  height: 0.1rem;
+}
+
+.title-line__second {
+  border: none;
+  color: #47b2e4;
+  background-color: #47b2e4;
+  width: 4rem;
+  height: 0.3rem;
+  position: absolute;
+  bottom: -1.7rem;
+  left: calc(50% - 20px);
+}
+
+.team__description,
+.pricing__description,
+.faq__description {
+  font-size: 1.5rem;
+  color: #444444;
+}
+
+/* Fading Animation */
+.fifth-section_fadeup {
+  animation-name: fifth-section_fadeup_ani;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fifth-section_fadeup_ani {
+  from {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Team Section */
+section.team {
+  background-color: #f3f5fa;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.team-grid {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: inline-grid;
+  grid-template-columns: 660px 660px;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+}
+
+.team .member .pic {
+  overflow: hidden;
+  width: 18rem;
+  border-radius: 50%;
+}
+
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .member:hover {
+  transform: translateY(-1rem);
+}
+
+.team .member .member-info {
+  padding-left: 3rem;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 2rem;
+  color: #37517e;
+}
+
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 1rem;
+  position: relative;
+  font-weight: 500;
+}
+
+.team .member span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5rem;
+  height: 1px;
+  background: #cbd6e9;
+  bottom: 0;
+  left: 0;
+}
+
+.team .member p {
+  margin: 1rem 0 0 0;
+  font-size: 14px;
+}
+
+.team .member .social-media {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .social-media a {
+  transition: ease-in-out 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5rem;
+  width: 32px;
+  height: 32px;
+  background: #eff2f8;
+}
+
+.team .member .social-media a i {
+  color: #37517e;
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+.team .member .social-media a:hover {
+  background: #47b2e4;
+}
+
+.team .member .social-media a:hover i {
+  color: #fff;
+}
+
+.team .member .social-media a + a {
+  margin-left: 8px;
+}
+
+#member-1,
+#member-2,
+#member-3,
+#member-4 {
+  margin: 20px 20px 0 0;
+  display: flex;
+}
+
+#member-1,
+#member-3 {
+  margin-left: 20px;
+}
+
+#member-3,
+#member-4 {
+  margin-bottom: 20px;
+}
+
+/* Pricing Section */
+.pricing__container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 4rem;
+  font-family: "Jost", sans-serif;
+}
+
+.pricing__item {
+  padding: 0 1.2rem;
+  flex-grow: 1;
+}
+
+.pricing-plan {
+  padding: 6rem 4rem;
+  box-shadow: 0 3rem 20rem -2rem rgb(20 45 100 / 10%);
+  background: #fff;
+  height: 100%;
+  border-top: 0.4rem solid #fff;
+  border-radius: 1rem;
+}
+
+.pricing__item h3 {
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #37517e;
+}
+
+.pricing__item h4 {
+  color: #37517e;
+  font-size: 4.8rem;
+  padding-bottom: 1rem;
+}
+
+.pricing-plan__dollar {
+  position: relative;
+  top: -1rem;
+  font-size: 2.8rem;
+}
+
+.pricing-plan__per-month {
+  color: #47b2e4;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.business-plan {
+  border-top-color: #47b2e4;
+}
+
+.pricing__item ul {
+  line-height: 2rem;
+  color: #999;
+  font-size: 1.8rem;
+  padding: 2rem 0;
+  margin-bottom: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+.pricing__item li {
+  position: relative;
+  padding: 1rem 0 1rem 3.5rem;
+}
+
+.pricing-plan__advantages img {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  object-fit: cover;
+  filter: invert(45%) sepia(94%) saturate(429%) hue-rotate(81deg)
+    brightness(97%) contrast(81%);
+}
+
+.pricing-plan__noadvantage {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.pricing-plan__noadvantage > img {
+  width: 2.8rem;
+  height: 2.8rem;
+  left: -0.4rem;
+  top: 0.6rem;
+  filter: opacity(0.5) drop-shadow(0 0 0 #ccc);
+}
+
+.pricing-plan__btn {
+  padding: 1.2rem 3.5rem;
+  border-radius: 5rem;
+  color: #3386ad !important;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition-duration: 0.3s;
+  border: 1px solid #47b2e4;
+}
+
+.pricing-plan__btn:hover {
+  color: white !important;
+  background-color: #47b2e4;
+}
+
+.pricing-plan__btn--middle {
+  padding: 1.2rem 3.5rem;
+  border-radius: 5rem;
+  color: white !important;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: #47b2e4;
+  border: 1px solid #47b2e4;
+  transition-duration: 0.3s;
+}
+
+.pricing-plan__btn--middle:hover {
+  background-color: #23a3df;
+}
+
+/* FAQ Section */
+section.faq {
+  background-color: #f3f5fa;
+}
+
+.faq__lists {
+  padding: 0 10rem 0 10rem;
+}
+
+.faq__lists ul {
+  line-height: 2rem;
+}
+
+.faq__lists li {
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  position: relative;
+}
+
+.faq__question {
+  position: relative;
+}
+
+.question-img {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  object-fit: cover;
+}
+
+.faq__question a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #37517e;
+  display: block;
+  transition: 0.3s;
+  line-height: 2.4rem;
+}
+
+.show-img {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 0;
+  top: 0.2rem;
+  object-fit: cover;
+}
+
+/* FAQ Accordion Motion */
+/* https://codepen.io/Pavan_Yuvan/pen/gPMdxR */
+.faq__accordion,
+.hidden {
+  display: none;
+}
+
+.faq__accordion + label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #37517e;
+  display: block;
+  transition: 0.3s;
+  line-height: 2.4rem;
+  padding: 0 3rem;
+  display: flex;
+
+  justify-content: space-between;
+
+  cursor: pointer;
+}
+
+.faq__accordion + label img:first-child {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  object-fit: cover;
+  filter: invert(67%) sepia(43%) saturate(1438%) hue-rotate(168deg)
+    brightness(94%) contrast(90%);
+}
+
+.faq__accordion + label + div {
+  overflow: hidden;
+  height: 0;
+  display: flex;
+  align-items: center;
+
+  transition: all 0.3s;
+}
+
+.faq__question p {
+  display: inline-block;
+  padding: 2rem 0 0 0;
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+.accordion__hidden:focus + input + label + div {
+  overflow: hidden;
+  height: 0;
+}
+
+.faq__accordion:checked + label,
+.faq__accordion:hover + label {
+  color: #47b2e4;
+}
+
+.faq__accordion:checked + label + div {
+  height: 10rem;
+}
+
+.faq__accordion:checked + label img:nth-child(2) {
+  transform: rotate(180deg);
+  filter: invert(60%) sepia(72%) saturate(386%) hue-rotate(156deg)
+    brightness(91%) contrast(97%);
+}
+
+.faq__accordion:hover + label {
+  color: #47b2e4;
+}
+
+.faq__accordion:hover + label img:nth-child(2) {
+  filter: invert(60%) sepia(72%) saturate(386%) hue-rotate(156deg)
+    brightness(91%) contrast(97%);
+}
+
+.hidden {
+  appearance: auto;
+  position: absolute;
+  top: -10px;
+  left: 50px;
+}
+
+.hidden:hover + label {
+  color: #47b2e4;
+}
+
+.hidden:checked + label {
+  color: #47b2e4;
+}
+
+.hidden + label {
+  visibility: hidden;
+}
+
+.faq__accordion:checked + label + input + label {
+  visibility: visible !important;
+  opacity: 1;
+}
+
+.faq__accordion:checked + label + input + label + div {
+  overflow: hidden;
+  height: 10rem;
+
+  transition: all 0.3s;
+}
+
+.faq__accordion:not(:checked) + label + input + label + div {
+  overflow: hidden;
+  height: 0rem;
+
+  transition: all 0.3s;
+}
+
+.hidden::not(:checked) + label {
+  opacity: 0 !important;
+}
+
+.hidden::checked + label + div {
+  overflow: hidden;
+  height: 10rem;
+  transition: all 0.3s;
+  color: red;
+}
+
+.hidden:not(:checked) + label + div {
+  overflow: hidden;
+  height: 0rem !important;
+  transition: all 0.3s;
+}
+
+.hidden + label {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #37517e;
+
+  width: 100%;
+  display: block;
+  transition: 0.3s;
+  line-height: 2.4rem;
+  padding: 0 rem;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  position: absolute;
+  top: 0rem;
+  left: 2.98rem;
+  z-index: 10rem;
+  opacity: 0;
+}
