@@ -127,6 +127,14 @@ section.team {
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
 
+@media screen and ( max-width: 1300px ) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    
+  }
+  
+}
+
 .team .member {
   position: relative;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
@@ -242,10 +250,21 @@ section.team {
 /* Pricing Section */
 .pricing__container {
   display: flex;
-  flex-wrap: wrap;
   padding-top: 4rem;
   font-family: "Jost", sans-serif;
 }
+@media screen and ( max-width: 1000px ) {
+  .pricing__container {
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto 30px auto;
+  }
+
+  .pricing__item {
+    margin-bottom: 2rem;
+  }
+}
+
 
 .pricing__item {
   padding: 0 1.2rem;
