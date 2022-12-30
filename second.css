@@ -1,0 +1,256 @@
+@import "reset.css";
+
+/*Clients 시작*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+    display: block;
+}
+
+.clients {
+    padding: 12px 0;
+    text-align: center;
+    background-color: #f3f5fa;
+}
+
+.clients img {
+    max-width: 45%;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+    padding: 15px 0;
+    filter: grayscale(100);
+}
+
+/*hover 반응으로 이미지가 확대되고 색이 나타남*/
+.clients img:hover {
+    filter: none; 
+    transform: scale(1.1);
+}
+
+.container1 {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*블록 형식을 인라인형식으로 바꿈*/
+.row1 {
+    display: flex;
+}
+
+
+
+
+
+/*About Us 시작*/
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.about  h2{
+    font: bold;
+    font-weight: 1000;
+    font-size: 2rem;
+    color: #40497c;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  left: 46%;
+  bottom: 449px;
+}  
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #47b2e4;
+  left: 48.5%;
+  bottom: 448px;
+}
+
+p, ul li, div a {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 200px;
+    margin-inline-end: 5px;
+    color: gray;
+    font-size: 17px;
+}
+
+.about .content ul li {
+    padding-left: 28px;
+    position: relative;
+}
+  
+.about .content ul li+li {
+    margin-top: 10px;
+}
+  
+.about .content ul i {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    font-size: 20px;
+    color: #47b2e4;
+    line-height: 1;
+}
+  
+.about .content .btn-learn-more {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 32px;
+    border-radius: 4px;
+    transition: 0.3s;
+    line-height: 1;
+    color: #47b2e4;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    margin-top: 6px;
+    border: 2px solid #47b2e4;
+}
+  
+.about .content .btn-learn-more:hover {
+    background: #47b2e4;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*Why Us 시작*/
+
+.section-bg {
+  background-color: #f3f5fa;
+}
+
+.why-us .content {
+  padding: 60px 100px 0 100px;
+}
+
+.why-us .content h3, .why-us .content span {
+  font-weight: 500;
+  font-size: 35px;
+  color: #37517e;
+}
+
+.why-us .content span {
+  font-weight: 900;
+}
+
+.why-us .content p {
+  position: absolute;
+  left: -100px;
+}
+
+.why-us .content .accordion-list p {
+  position: absolute;
+  left: -100px;
+}
+
+.flex-column {
+  flex-direction: column!important;
+}
+
+.col-lg-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.why-us .accordion-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.why-us .accordion-list a.collapsed:hover {
+  color: #47b2e4;
+}
+
+.why-us .accordion-list a.collapsed {
+  color: #343a40;
+  left: -100px;
+  font-family: "Poppins", sans-serif;
+}
+
+.why-us .accordion-list a {
+  display: block;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding-right: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.box1 {
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.box1 p {
+  color: #343a40;
+  margin: 0;
+  padding-top: 5px;
+}
+
+details > summary::-webkit-details-marker {
+  display: none
+}
+
+details summary::-webkit-details-marker {
+  display: none
+}
+
+
+.why-us .accordion-list a.collapsed .icon-show {
+  padding-left: 250px;
+  bottom: 20px;
+  margin-right: 0;
+}
+
+.bx {
+  font-family: boxicons!important;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-rendering: auto;
+  display: inline-block;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.why-us .accordion-list span {
+  color: #47b2e4;
+  font-weight: 600;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.why-us .img {
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.col-lg-5 {
+  flex: 0 0 auto;
+  width: 41.66666667%;
+}
