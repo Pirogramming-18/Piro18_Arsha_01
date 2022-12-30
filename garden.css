@@ -12,6 +12,10 @@ body {
   color: #444444;
 }
 
+.b-ho-back:hover {
+  background-color: #1280b4;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -138,6 +142,12 @@ body {
 .contact-form {
   display: flex;
 }
+@media screen and ( max-width: 1200px ) {
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 .address,
 .email,
@@ -155,6 +165,11 @@ body {
   background-color: var(--yyskyblue);
   color: var(--skyblue);
   border-radius: 100%;
+}
+
+.i-con:hover {
+  background-color: var(--skyblue);
+  color: var(--yyskyblue);
 }
 
 .more-text {
@@ -211,6 +226,8 @@ body {
   display: block;
   padding: 50px 0;
   background-color: var(--semicolor);
+  border-top: 1px solid rgb(227, 227, 227);
+  border-bottom: 1px solid rgb(227, 227, 227);
 }
 
 .flex-footer {
@@ -264,6 +281,10 @@ body {
   right: 5rem;
 }
 
+.flex-footer form input[type=submit]:hover{
+  background-color: #1280b4;
+}
+
 #flex-form {
   position: relative;
   left: 2.7rem;
@@ -275,6 +296,30 @@ body {
   margin: 0 auto;
   padding: 0;
 }
+
+.footer-container li:hover {
+  color: var(--skyblue);
+}
+
+.footer-twodiv {
+  display: flex;
+}
+
+@media screen and ( max-width: 1200px ) {
+  .footer-twodiv{
+    flex-direction: column;
+  }
+}
+
+@media screen and ( max-width: 890px ) {
+  .footer-twodiv{
+    flex-direction: column;
+  }
+  .footer-container{
+    flex-direction: column;
+  }
+}
+
 
 .footer-fi,
 .footer-se,
@@ -288,7 +333,7 @@ body {
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 800;
   color: var(--hfcolor);
 }
 
@@ -344,16 +389,29 @@ body {
   color: var(--white);
   padding: 3rem 5rem;
 }
+@media screen and ( max-width: 1400px ) {
+  .footer-bottom{
+    justify-content: space-between;
+  }
+}
 
 .credits > a {
   color: var(--skyblue);
 }
 
-.right-fixed {
+#right-fixed {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  color: var(--skyblue) !important;
-  color: var(--white);
+  color: var(--skyblue);
+  background-color: var(--white);
   border-radius: 100%;
+}
+
+#right-fixed:hover {
+  color: #7ac9ed;
+}
+
+#copy-strong span {
+  font-weight: 800;
 }
