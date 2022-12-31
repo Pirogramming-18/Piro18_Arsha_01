@@ -230,7 +230,7 @@ img {
 }
 .plz > li{
     transition: all 0.5s;
-    padding: 10px 0px 10px 30px;
+    padding: 10px 0px 10px 33px;
 }
 .plz>li:hover{
     color:#50B4F5;

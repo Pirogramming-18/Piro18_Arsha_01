@@ -179,8 +179,9 @@
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
-  padding-left: 350px;
-  bottom: 10px;
+  float:right;
+  /* padding-left: 350px;
+  bottom: 10px; */
 }
 
 .why-us .content p {
